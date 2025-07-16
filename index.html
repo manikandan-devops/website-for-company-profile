@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Company - Modern & Interactive</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav>
+  <div class="logo" onclick="window.scrollTo({top:0, behavior:'smooth'})">Company</div>
+  <ul>
+    <li><a href="#hero" class="active">Home</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#cta">Get Started</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="hero" class="hero-slider">
+  <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80');">
+    <div class="slide-content">
+      <h2>Build Stunning Websites</h2>
+      <p>Powerful tools to create beautiful, responsive websites with ease.</p>
+    </div>
+  </div>
+  <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80');">
+    <div class="slide-content">
+      <h2>Customizable Designs</h2>
+      <p>Tailor your site with flexible layouts and powerful integrations.</p>
+    </div>
+  </div>
+  <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1350&q=80');">
+    <div class="slide-content">
+      <h2>Fast & Secure Hosting</h2>
+      <p>Reliable performance and security to keep your site online and safe.</p>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="features">
+  <div class="feature-item">
+    <div class="feature-icon">⚙️</div>
+    Customizable layouts and themes
+  </div>
+  <div class="feature-item">
+    <div class="feature-icon">🚀</div>
+    Lightning fast page loads
+  </div>
+  <div class="feature-item">
+    <div class="feature-icon">🔒</div>
+    Enterprise-grade security
+  </div>
+  <div class="feature-item">
+    <div class="feature-icon">📱</div>
+    Mobile-friendly responsive design
+  </div>
+  <div class="feature-item">
+    <div class="feature-icon">💡</div>
+    Intuitive drag-and-drop editor
+  </div>
+  <div class="feature-item">
+    <div class="feature-icon">🌐</div>
+    Global CDN for fast content delivery
+  </div>
+</section>
+
+<section id="cta" class="cta">
+  <h2>Ready to get started?</h2>
+  <button onclick="alert('Thank you for your interest!')">Get Started Now</button>
+</section>
+
+<section id="contact" style="max-width: 600px; margin: 0 auto 4rem; padding: 0 2rem;">
+  <h2>Contact Us</h2>
+  <form id="contactForm" onsubmit="return validateContactForm()" style="display: flex; flex-direction: column; gap: 1rem;">
+    <input type="text" id="name" name="name" placeholder="Your Name" required />
+    <input type="email" id="email" name="email" placeholder="Your Email" required />
+    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2024 Company. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
